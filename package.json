@@ -1,0 +1,11 @@
+{
+  "name": "final-offer-scraping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/senseisclub/final-offer.git",
+  "author": "Henrique Barbosa",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^10.2.0"
+  }
+}
