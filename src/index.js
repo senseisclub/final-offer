@@ -1,6 +1,6 @@
 const cuponation = require('./cuponation');
 
 (async () => {
-  const cuponationCupons = await cuponation();
-  console.log(cuponationCupons);
+  const cuponationVouchers = await cuponation();
+  console.log(cuponationVouchers);
 })();
