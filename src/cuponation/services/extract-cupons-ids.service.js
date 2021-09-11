@@ -3,12 +3,12 @@ module.exports = async (browser, url) => {
     await page.goto(url);
 
     console.log(`scraping: ${url}`);
-    const cuponsIds = await page.evaluate(() =>
-        Array.from(document.querySelectorAll('div.main_vouchers .v.c'))
-            .map(cupomElement => cupomElement.id)
+    const vouchersIds = await page.evaluate(() =>
+        Array.from(document.querySelectorAll('div.main_vouchers .v.c:not(.best, .best-banner)'))
+            .map(voucherElement => voucherElement.id)
     );
 
     await page.close();
 
-    return cuponsIds;
+    return vouchersIds;
 }
